@@ -1,13 +1,10 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "strict": false,
     "noImplicitAny": false,
     "noEmit": true,
@@ -19,24 +16,19 @@
     "jsx": "preserve",
     "jsxImportSource": "nativewind",
     "incremental": true,
+    "allowImportingTsExtensions": true,
     "plugins": [
       {
         "name": "next"
       }
     ],
     "paths": {
-      "@/*": [
-        "./*"
-      ],
-      "@/utils/*": [
-        "./utils/*"
-      ],
-      "@/components/*": [
-        "./components/*"
-      ],
-      "tailwind.config": [
-        "./tailwind.config.js"
-      ]
+      "@/*": ["./*"],
+      "@/utils/*": ["./utils/*"],
+      "@/components/*": ["./components/*"],
+      "@/models/*": ["./models/*"],
+      "@screens/*": ["./screens/*"],
+      "tailwind.config": ["./tailwind.config.js"]
     }
   },
   "include": [
@@ -46,9 +38,7 @@
     ".next/types/**/*.ts",
     "next.config.mjs",
     "nativewind-env.d.ts",
-    "tailwind-variants.d.ts"
+    "tailwind-variants.d.ts",
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

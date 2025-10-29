@@ -1,6 +1,8 @@
+// import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 const Header = () => {
+  // const router = useRouter();
   return (
     <header className="bg-black/50 backdrop-blur-sm border-b border-gray-800 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
@@ -15,11 +17,11 @@ const Header = () => {
           </Link>
 
           <nav className="hidden md:flex space-x-8">
-            <Link href="/" className="hover:text-green-400 transition-colors">
+            <Link href="/airdrop" className="hover:text-green-400 transition-colors">
               Home
             </Link>
             <Link
-              href="/airdrop"
+              href="/"
               className="hover:text-green-400 transition-colors"
             >
               Airdrop
@@ -27,7 +29,7 @@ const Header = () => {
             <Link href="/app" className="hover:text-green-400 transition-colors">
               Main App
             </Link>
-            <a href="#about" className="hover:text-green-400 transition-colors">
+            <a href="/about" className="hover:text-green-400 transition-colors">
               About
             </a>
             <a
